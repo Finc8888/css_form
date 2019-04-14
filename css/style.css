@@ -1,5 +1,5 @@
-html { 
-  background: url("img/form_bg.png") no-repeat center center fixed; 
+html {
+  background: url("img/form_bg.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -13,7 +13,7 @@ a:hover{
 }
 .container{
 	width: 450px;
-	height: 500px;
+  padding-bottom: 20px;
 	background-color: rgb(24, 33, 52,0.7);
 	margin: 250px auto 0 auto;
 	text-align: center;
@@ -36,7 +36,7 @@ input[type="text"],input[type="password"]{
 	font-size: 18px;
 	margin-bottom: 25px;
 	border-radius:4px;
-	padding-left: 10px;
+	padding-left: 35px;
 }
 .submit{
 	padding: 13px 30px;
@@ -56,4 +56,37 @@ input[type="text"],input[type="password"]{
 	        transition: all 0.5s;
     background: #FFF;
     color: #2c536c;
+}
+.input::before{
+  font-family: "FontAwesome";
+  content: "\f007";
+  position: absolute;
+  font-size: 30px;
+  padding: 10px 0 0 7px;
+  color: #2c536c;
+}
+.input:nth-child(2)::before{
+  content: "\f023"
+}
+.input:hover::before{
+  color: #319ebc;
+-webkit-transition: all 0.3s;
+-o-transition: all 0.3s;
+transition: all 0.3s;
+}
+.input input:hover{
+  -webkit-box-shadow: 0 0 6px 3px rgba(58,219,253,0.53);
+  box-shadow: 0 0 6px 3px rgba(58,219,253,0.53);
+}
+.social i{
+  color: #fff;
+  font-size: 20px;
+  width: 20px;
+  padding: 10px;
+}
+.social i:hover{
+  background-color: #fff;
+  color: #1a394f;
+  border-radius: 5px;
+  cursor: pointer;
 }
